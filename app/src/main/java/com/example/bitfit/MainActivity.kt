@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
                         entity.calories,
                     )
                 }.also { mappedList ->
-                    foods.clear()
                     foods.addAll(mappedList)
                     foodAdapter.notifyDataSetChanged()
                 }
@@ -64,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                             (application as FoodApplication).db.foodDao().insert(food)
                         }
                         foods.add(food)
-                        foodAdapter.notifyDataSetChanged()
+                        foodAdapter.notifyItemChanged(foods.size-1)
                     }
 
                 }

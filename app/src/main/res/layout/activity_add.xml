@@ -23,7 +23,7 @@
             android:layout_centerVertical="true"
             android:background="#ffffff"
             android:ems="100"
-            android:hint="ENTER FOOD NAME" />
+            android:hint="@string/enter_food_name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -54,7 +54,7 @@
             android:layout_centerVertical="true"
             android:background="#ffffff"
             android:ems="100"
-            android:hint="ENTER CALORIES AMOUNT" />
+            android:hint="@string/enter_calories_amount" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
